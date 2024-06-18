@@ -11,5 +11,10 @@
 
 body {
   margin: 0;
-  padding: 1.25rem 2.75rem 1.25rem 2.75rem;
+  background-color: #FFF4E5;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
 }
