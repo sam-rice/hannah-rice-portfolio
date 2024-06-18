@@ -1,8 +1,7 @@
-import { AnimatePresence, motion } from "framer-motion"
 import { FC } from "react"
 import { Link, Outlet } from "react-router-dom"
 
-const PageLayout: FC = () => {
+const MainLayout: FC = () => {
   return (
     <div className="flex grow">
       <aside className="mr-11">
@@ -27,19 +26,8 @@ const PageLayout: FC = () => {
         </nav>
       </aside>
       <Outlet />
-      {/* <main className="flex-1 px-5">
-      </main> */}
-      {/* <AnimatePresence>
-        <motion.main
-          className="flex-1 px-5"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
-        </motion.main>
-      </AnimatePresence> */}
     </div>
   )
 }
 
-export default PageLayout
+export default MainLayout
