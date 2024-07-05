@@ -19,7 +19,6 @@ const AboutPage: FC = () => {
 
   return (
     <PageContainer className="mb-8 px-20">
-      <h1 className="underline text-center mb-10">about</h1>
       <article className="flex mb-20">
         <p className="px-8">{performanceBio}</p>
         <img
@@ -29,9 +28,9 @@ const AboutPage: FC = () => {
         />
       </article>
       <article className="flex items-center flex-col space-y-7">
-        <h2 className="underline">artist statement</h2>
+        <h1 className="underline">artist statement</h1>
         <p>{statementIntro}</p>
-        <h3 className="font-bold pt-12">SPACE</h3>
+        <h2 className="font-bold pt-12">SPACE</h2>
         <div>
           Large movement studios | remote sprawling woodlands | abandoned
           structural shelters
@@ -43,7 +42,7 @@ const AboutPage: FC = () => {
         <div className="italic">
           Big bodies squished into household aquariums
         </div>
-        <h3 className="font-bold pt-12">SOUND</h3>
+        <h2 className="font-bold pt-12">SOUND</h2>
         <div>
           The <strong>body that sounds</strong> against stationary objects.
           Proof of life, proof of relationship to planet.
@@ -71,11 +70,11 @@ const AboutPage: FC = () => {
           </div>
         </div>
         <div>Electricity cables humming in the woods</div>
-        <h3 className="font-bold pt-12">PROCESS</h3>
+        <h2 className="font-bold pt-12">PROCESS</h2>
         <p>{processIntro}</p>
         <p>{processSubIntro}</p>
         <div className="text-center">
-          <h3>I am committed to:</h3>
+          <h2>I am committed to:</h2>
           <ul>
             <li>Art in rural spaces</li>
             <li>Found sounds</li>

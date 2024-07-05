@@ -7,7 +7,7 @@ const PilatesPage: FC = () => {
 
   return (
     <PageContainer className="flex items-center flex-col px-20">
-      <h1 className="underline mb-10">pilates</h1>
+      {/* <h1 className="underline mb-10">pilates</h1> */}
       <article className="flex">
         <div className="px-8">
           <p>{pilatesBio}</p>
