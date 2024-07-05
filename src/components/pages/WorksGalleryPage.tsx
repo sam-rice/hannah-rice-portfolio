@@ -6,7 +6,7 @@ const WorksGalleryPage: FC = () => {
   const [mediaType, setMediaType] = useState("photo")
 
   return (
-    <PageContainer classNames="flex items-center flex-col">
+    <PageContainer className="flex items-center flex-col">
       <h1 className="underline mb-5">works</h1>
       <nav>
         <ul className="flex">

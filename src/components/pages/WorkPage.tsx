@@ -6,11 +6,11 @@ import WorkDetails from '../WorkDetails'
 import ErrorMessage from '../ErrorMessage'
 
 const WorkPage: FC = () => {
-  const { id = "" } = useParams()
-  const work = works.find((work: IWork) => work.id === parseInt(id))
+  const { workName = "" } = useParams()
+  const work = works.find((work: IWork) => work.href === workName)
 
   return (
-    <PageContainer>
+    <PageContainer className="px-32 flex flex-col items-center">
       {
         work ? <WorkDetails {...work} /> : <ErrorMessage />
       }

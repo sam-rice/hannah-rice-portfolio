@@ -18,7 +18,7 @@ const AboutPage: FC = () => {
     "Documentation has become a big part of my work.  Recording spontaneous sounds in nature and of the body, moving against the vinyl floor.  Recording improvised successes and giant failures.  It is all practice."
 
   return (
-    <PageContainer classNames="mb-8 px-20">
+    <PageContainer className="mb-8 px-20">
       <h1 className="underline text-center mb-10">about</h1>
       <article className="flex mb-20">
         <p className="px-8">{performanceBio}</p>

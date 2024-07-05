@@ -1,19 +1,49 @@
 export interface IWork {
-  id: number
+  href: string
   name: string
+  releaseDate: string
   description: string
-  externalLink?: string
-  videoMarkup?: string
+  credits?: {
+    role: string
+    name: string
+  }[]
+  externalLink?: {
+    href: string
+    title: string
+  }
+  videoEmbedSrc?: string
+  images?: {
+    href: string
+    alt: string
+  }[]
 }
 
 export const works = [
   {
-    id: 1,
+    href: "yellow-house",
     name: "Yellow House",
+    releaseDate: "September 2021",
     description:
       "Yellow House is a series of short films all centered around the theme of yellow and presented in solo format by 13 individual artists. You can find these films by stepping into our 4 square foot micro theater in Leavenworth, Washington, scanning the QR codes and experiencing a performance that extends beyond time and space.",
-    externalLink: "https://www.instagram.com/p/CTzo7cXJfTB/?hl=en&img_index=1",
-    videoMarkup: `<iframe src="https://player.vimeo.com/video/969964765?h=015f8b546e" width="640" height="338" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/969964765">Proof of Concept</a> from <a href="https://vimeo.com/newyorker">The New Yorker</a> on <a href="https://vimeo.com">Vimeo</a>.</p>`,
+    credits: [
+      {
+        role: "director",
+        name: "Hannah Rice",
+      },
+      {
+        role: "editor",
+        name: "Greg Something",
+      },
+    ],
+    externalLink: {
+      href: "https://www.instagram.com/p/CTzo7cXJfTB/?hl=en&img_index=1",
+      title: "more on instagram",
+    },
+    videoEmbedSrc: "https://player.vimeo.com/video/969964765?h=015f8b546e",
+    images: [
+      { href: "https://imgur.com/L3CCXe8.jpg", alt: "alt text" },
+      { href: "https://imgur.com/gbiHQPn.jpg", alt: "alt text" },
+      { href: "https://imgur.com/cTieBHV.jpg", alt: "alt text" },
+    ],
   },
 ]

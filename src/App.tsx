@@ -20,7 +20,7 @@ function App() {
             <Route path="/works" >
               <Route index element={<WorksGalleryPage />} />
               <Route
-                path=":id"
+                path=":workName"
                 element={<WorkPage />}
               />
             </Route>

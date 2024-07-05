@@ -4,7 +4,7 @@ import PageContainer from "../PageContainer"
 
 const HomePage: FC = () => {
   return (
-    <PageContainer classNames="flex items-center flex-col">
+    <PageContainer className="flex items-center flex-col">
       <p className="mb-7">
         <Link
           className="mx-3"
