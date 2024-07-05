@@ -7,11 +7,13 @@
   font-weight: 400;
   font-style: normal;
   font-size: large;
+  color: #909090;
 }
 
 body {
   margin: 0;
-  background-color: #FFF4E5;
+  /* background-color: #FFF4E5; */
+  background-color: #fef8f0;
   min-height: 100vh;
 }
 

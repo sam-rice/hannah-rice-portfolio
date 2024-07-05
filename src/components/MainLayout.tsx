@@ -4,7 +4,7 @@ import { Link, Outlet } from "react-router-dom"
 const MainLayout: FC = () => {
   return (
     <div className="flex grow">
-      <aside className="mr-11">
+      <aside>
         <nav>
           <ul className="space-y-1">
             <li className="hover:underline">

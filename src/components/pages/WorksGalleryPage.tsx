@@ -2,7 +2,7 @@ import classNames from "classnames"
 import { FC, useState } from "react"
 import PageContainer from "../PageContainer"
 
-const WorksPage: FC = () => {
+const WorksGalleryPage: FC = () => {
   const [mediaType, setMediaType] = useState("photo")
 
   return (
@@ -41,4 +41,4 @@ const WorksPage: FC = () => {
   )
 }
 
-export default WorksPage
+export default WorksGalleryPage

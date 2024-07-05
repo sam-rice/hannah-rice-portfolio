@@ -3,8 +3,9 @@ import HomePage from "./components/pages/HomePage"
 import Header from "./components/Header"
 import MainLayout from "./components/MainLayout"
 import AboutPage from "./components/pages/AboutPage"
-import WorksPage from "./components/pages/WorksPage"
+import WorksGalleryPage from "./components/pages/WorksGalleryPage"
 import PilatesPage from "./components/pages/PilatesPage"
+import WorkPage from "./components/pages/WorkPage"
 // import ContactPage from "./components/pages/ContactPage"
 
 function App() {
@@ -16,7 +17,13 @@ function App() {
           <Route element={<MainLayout />}>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/works" element={<WorksPage />} />
+            <Route path="/works" >
+              <Route index element={<WorksGalleryPage />} />
+              <Route
+                path=":id"
+                element={<WorkPage />}
+              />
+            </Route>
             <Route path="/pilates" element={<PilatesPage />} />
             {/* <Route path="/contact" element={<ContactPage />} /> */}
           </Route>
