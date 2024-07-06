@@ -11,7 +11,6 @@ const MainLayout: FC = () => {
     { href: "/pilates", title: "pilates" },
   ]
 
-  console.log(pathname)
   const navButtons = navRoutes.map(
     ({ href, title }: { href: string; title: string }) => (
       <li
@@ -38,15 +37,6 @@ const MainLayout: FC = () => {
               <Link to="/">home</Link>
             </li>
             {navButtons}
-            {/* <li className="hover:underline">
-              <Link to="/about">about</Link>
-            </li>
-            <li className="hover:underline">
-              <Link to="/works">works</Link>
-            </li>
-            <li className="hover:underline">
-              <Link to="/pilates">pilates</Link>
-            </li> */}
           </ul>
         </nav>
       </aside>

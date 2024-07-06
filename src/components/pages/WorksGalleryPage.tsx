@@ -4,7 +4,7 @@ import PageContainer from "../PageContainer"
 import { Link } from "react-router-dom"
 
 const WorksGalleryPage: FC = () => {
-  const [mediaType, setMediaType] = useState("photo")
+  // const [mediaType, setMediaType] = useState("photo")
 
   return (
     <PageContainer className="flex items-center flex-col px-20">
