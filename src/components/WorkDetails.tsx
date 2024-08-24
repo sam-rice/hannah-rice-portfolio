@@ -5,23 +5,25 @@ import { Link } from "react-router-dom"
 const WorkDetails: FC<IWork> = ({
   name,
   releaseDate,
-  description,
-  credits,
+  descriptionList,
+  // credits,
   videoEmbedSrc,
   externalLink,
   images,
 }) => {
-  const creditList = credits?.map(
-    ({ role, name }: { role: string; name: string }) => (
-      <div
-        className="flex"
-        key={role}
-      >
-        <dt className="mr-3">{role}:</dt>
-        <dd>{name}</dd>
-      </div>
-    )
-  )
+  // const creditList = credits?.map(
+  //   ({ role, name }: { role: string; name: string }) => (
+  //     <div
+  //       className="flex"
+  //       key={role}
+  //     >
+  //       <dt className="mr-3">{role}:</dt>
+  //       <dd>{name}</dd>
+  //     </div>
+  //   )
+  // )
+
+  const descriptionParagraphs = descriptionList.map((line: string) => <p>{line}</p>)
 
   const imageNodes = images?.map(
     ({ href, alt }: { href: string; alt: string }) => (
@@ -53,8 +55,8 @@ const WorkDetails: FC<IWork> = ({
       )}
       <section className="space-y-7 my-16">
         <div>{releaseDate}</div>
-        <p>{description}</p>
-        {credits && <dl>{creditList}</dl>}
+        {descriptionParagraphs}
+        {/* {credits && <dl>{creditList}</dl>} */}
         {externalLink && (
           <Link
             className="inline-block underline hover:text-black"
