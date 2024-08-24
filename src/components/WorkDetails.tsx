@@ -23,7 +23,7 @@ const WorkDetails: FC<IWork> = ({
   //   )
   // )
 
-  const descriptionParagraphs = descriptionList.map((line: string) => <p>{line}</p>)
+  const descriptionParagraphs = descriptionList.map((line: string, idx) => <p key={idx}>{line}</p>)
 
   const imageNodes = images?.map(
     ({ href, alt }: { href: string; alt: string }) => (
