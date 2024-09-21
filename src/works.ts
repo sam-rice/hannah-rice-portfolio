@@ -52,7 +52,7 @@ export const works: IWork[] = [
   {
     href: "all-the-hours-of-the-day",
     name: "All The Hours of The Day",
-    releaseDate: "2021",
+    releaseDate: "2024",
     descriptionList: [
       "Excerpt from Gallery 1412 in Seattle, WA in 2024",
       "All The Hours of The Day is a movement and sound performance created by Hannah Rice and Casey Adams.",
